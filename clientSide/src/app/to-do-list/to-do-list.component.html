@@ -1,0 +1,14 @@
+
+<ul>
+  <li>
+    <span class='header'>Description</span>
+    <span class='header'>Date</span>
+    <span class='header'>Name</span>
+  </li>
+
+  <li *ngFor="let tp of tasks_person">
+    <span>{{tp.description}}</span>
+    <span>{{tp.date}}</span>
+    <span>{{tp.tasks_person[0].name}}</span>
+  </li>
+</ul>

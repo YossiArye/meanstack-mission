@@ -1,0 +1,17 @@
+
+
+<hr>
+
+<form [formGroup]="profileForm">
+    <h4>Add Task</h4>
+  <label>
+    Description:
+    <input type="text" formControlName="description"  required>
+  </label>
+  <select class="form-control" id="person-name" formControlName="person"  required>
+    <option  value='' disabled>Family Members</option>
+    <option *ngFor="let p of people" [value]="p._id">{{p.name}}</option>
+  </select>
+  <form [formGroup]="profileForm" (ngSubmit)="addTask()">
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>

@@ -1,0 +1,110 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": "wash",
+      "date": "2016-10-11",
+      "personID": 1
+    },
+    {
+      "id": 2,
+      "description": "shave",
+      "date": "2019-10-11",
+      "personID": 1
+    },
+    {
+      "id": 3,
+      "description": "draw",
+      "date": "2012-10-11",
+      "personID": 2
+    },
+    {
+      "description": "ssssss",
+      "date": "12/05/2018",
+      "personID": "2",
+      "id": 4
+    },
+    {
+      "description": "qqqqqqq",
+      "date": "2018-12-05",
+      "personID": "1",
+      "id": 5
+    }
+  ],
+  "people": [
+    {
+      "id": 1,
+      "name": "yossi",
+      "nickname": "joseff",
+      "description": "manager"
+    },
+    {
+      "id": 2,
+      "name": "benny",
+      "nickname": "ben",
+      "description": "brother"
+    },
+    {
+      "id": 3,
+      "name": "danna",
+      "nickname": "dan",
+      "description": "sister"
+    },
+    {
+      "id": 4,
+      "name": "chava",
+      "nickname": "chavi",
+      "description": "grand papa"
+    },
+    {
+      "id": 5,
+      "name": "nechemia",
+      "nickname": "nicki",
+      "description": "brother"
+    }
+  ],
+  "tasks_person": [
+    {
+      "_id": 1,
+      "description": "wash",
+      "date": "2016-10-11",
+      "personID": 1,
+      "tasks_person": [
+        {
+          "_id": 1,
+          "name": "yossi",
+          "nickname": "joseff",
+          "description": "manager"
+        }
+      ]
+    },
+    {
+      "_id": 2,
+      "description": "shave",
+      "date": "2019-10-11",
+      "personID": 3,
+      "tasks_person": [
+        {
+          "_id": 3,
+          "name": "danna",
+          "nickname": "dan",
+          "description": "sister"
+        }
+      ]
+    },
+    {
+      "_id": 3,
+      "description": "draw",
+      "date": "2012-10-11",
+      "personID": 3,
+      "tasks_person": [
+        {
+          "_id": 3,
+          "name": "danna",
+          "nickname": "dan",
+          "description": "sister"
+        }
+      ]
+    }
+  ]
+}
